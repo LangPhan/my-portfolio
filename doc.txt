@@ -2,3 +2,4 @@
 2. react-simple-typewriter
 
 git push -u origin main
+second people 
