@@ -7,7 +7,7 @@ function Hero() {
   const constraintsRef = useRef(null);
   return (
     <motion.div
-      className="flex flex-col justify-center items-center overflow-hidden mt-8"
+      className="h-full flex flex-col justify-center items-center overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.5 }}

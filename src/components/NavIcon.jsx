@@ -55,14 +55,14 @@ function NavIcon() {
           transition={{
             default: { duration: 2, ease: "easeInOut" },
             fill: { duration: 2, ease: [1, 0, 0.8, 1] },
-            delay: 1.2,
+            delay: 4.5,
           }}
         />
       </motion.svg>
       <motion.div
         className="invisible absolute bottom-7 w-7 h-32 bg-white rounded-lg z-40 
       flex flex-col justify-center items-center gap-1 shadow-2xl
-      peer-hover:visible hover:visible after:content-['.'] after:text-white after:absolute after:bottom-[-10px]"
+      peer-hover:visible hover:visible after:content-['.'] after:text-white after:absolute after:bottom-[-10px] after:w-7"
       >
         <div className="relative">
           <motion.svg

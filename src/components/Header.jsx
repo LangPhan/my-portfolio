@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Header() {
   return (
-    <header className="h-12 flex justify-between items-center md:mx-20 mx-2 z-100 sticky top-0 overflow-hidden">
+    <header className="h-12 z-[100] flex justify-between items-center md:mx-20 mx-2 z-100 sticky top-0 overflow-hidden">
       <motion.div
         initial={{
           x: -500,
