@@ -7,14 +7,14 @@ function Hero() {
   const constraintsRef = useRef(null);
   return (
     <motion.div
-      className="h-full flex flex-col justify-center items-center overflow-hidden"
+      className="h-screen flex flex-col justify-center items-center overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.5 }}
       ref={constraintsRef}
     >
       <ImageHero />
-      <div className="text-white drop-shadow-text min-h-[24px]">
+      <div className="text-white text-xl md:text-2xl drop-shadow-text min-h-[24px] z-50">
         <Typewriter
           words={[
             "Hi, The Name's Dat",
@@ -24,14 +24,15 @@ function Hero() {
           loop={true}
           cursor
           cursorStyle="|"
+          cursorColor="yellow"
           typeSpeed={100}
-          deleteSpeed={50}
-          delaySpeed={10}
+          deleteSpeed={100}
+          delaySpeed={0}
         />
       </div>
       <motion.div
         className="absolute bg-sGradientColor rounded-full w-[150px] h-[150px] shadow-xl 
-      flex justify-center items-center text-lg text-white top-0 left-0 cursor-move"
+      flex justify-center items-center text-lg text-white top-[10%] left-[10%] cursor-move z-10"
         drag
         dragConstraints={constraintsRef}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -43,7 +44,7 @@ function Hero() {
       </motion.div>
       <motion.div
         className="absolute bg-sGradientColor rounded-full w-[150px] h-[150px] shadow-xl 
-      flex justify-center items-center text-lg text-white top-0 right-0 cursor-move"
+      flex justify-center items-center text-lg text-white top-[10%] right-[10%] cursor-move z-10"
         drag
         dragConstraints={constraintsRef}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -55,7 +56,7 @@ function Hero() {
       </motion.div>
       <motion.div
         className="absolute bg-sGradientColor rounded-full w-[150px] h-[150px] shadow-xl 
-      flex justify-center items-center text-lg text-white bottom-24 left-0 cursor-move"
+      flex justify-center items-center text-lg text-white bottom-[15%] left-[10%] cursor-move z-10"
         drag
         dragConstraints={constraintsRef}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -67,7 +68,7 @@ function Hero() {
       </motion.div>
       <motion.div
         className="absolute bg-sGradientColor rounded-full w-[150px] h-[150px] shadow-xl 
-      flex justify-center items-center text-lg text-white bottom-24 right-0 cursor-move"
+      flex justify-center items-center text-lg text-white bottom-[15%] right-[10%] cursor-move z-10"
         drag
         dragConstraints={constraintsRef}
         initial={{ opacity: 0, scale: 0.5 }}

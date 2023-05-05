@@ -7,6 +7,7 @@
     @apply text-transparent bg-clip-text bg-gradient-to-l from-fGradientColor to-sGradientColor;
   }
   .section {
-    @apply md:mx-10 mx-2 h-screen z-10 relative 
+    @apply md:mx-10 mx-2 min-h-screen z-10 relative 
   }
 }
+

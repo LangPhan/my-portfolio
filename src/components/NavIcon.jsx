@@ -13,10 +13,10 @@ function NavIcon() {
   };
   return (
     <motion.div
-      className="fixed bottom-8 right-4 w-8 h-8 rounded-full 
+      className="fixed bottom-8 right-8 w-10 h-10 rounded-full 
     bg-white flex justify-center items-center shadow-2xl z-50"
       whileHover={{
-        scale: 1.2,
+        scale: 1.5,
       }}
       initial={{
         x: 500,
@@ -40,7 +40,7 @@ function NavIcon() {
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
-        whileHover={{ rotate: 90 }}
+        whileHover={{ rotate: 90 }} 
         whileTap={{
           rotate: -90,
         }}
@@ -60,11 +60,11 @@ function NavIcon() {
         />
       </motion.svg>
       <motion.div
-        className="invisible absolute bottom-7 w-7 h-32 bg-white rounded-lg z-40 
+        className="invisible absolute bottom-7 w-7 h-28 bg-white rounded-lg z-40 
       flex flex-col justify-center items-center gap-1 shadow-2xl
       peer-hover:visible hover:visible after:content-['.'] after:text-white after:absolute after:bottom-[-10px] after:w-7"
       >
-        <div className="relative">
+        <a href="#hero" className="relative">
           <motion.svg
             whileHover={{ scale: 1.2 }}
             whileTap={{rotate: 90}}
@@ -88,10 +88,11 @@ function NavIcon() {
           >
             Hero
           </motion.p>
-        </div>
-        <div className="relative">
+        </a>
+        <a href="#about" className="relative">
           <motion.svg
             whileHover={{ scale: 1.2 }}
+            whileTap={{rotate: 90}}
             className="peer w-5 h-5 text-sGradientColor cursor-pointer"
             fill="none"
             stroke="currentColor"
@@ -109,10 +110,11 @@ function NavIcon() {
           <p className="absolute right-8 top-[2px] text-xs gradientText invisible peer-hover:visible">
             About
           </p>
-        </div>
-        <div className="relative">
+        </a>
+        <a href="#skill" className="relative">
           <motion.svg
             whileHover={{ scale: 1.2 }}
+            whileTap={{rotate: 90}}
             className="peer w-5 h-5 text-sGradientColor cursor-pointer"
             fill="none"
             stroke="currentColor"
@@ -130,10 +132,11 @@ function NavIcon() {
           <p className="absolute right-8 top-[2px] text-xs gradientText invisible peer-hover:visible">
             Skills
           </p>
-        </div>
-        <div className="relative">
+        </a>
+        <a href="#project" className="relative">
           <motion.svg
             whileHover={{ scale: 1.2 }}
+            whileTap={{rotate: 90}}
             className="peer w-5 h-5 text-sGradientColor cursor-pointer"
             fill="none"
             stroke="currentColor"
@@ -151,28 +154,7 @@ function NavIcon() {
           <p className="absolute right-8 top-[2px] text-xs gradientText invisible peer-hover:visible">
            Projects
           </p>
-        </div>
-        <div className="relative">
-          <motion.svg
-            whileHover={{ scale: 1.2 }}
-            className="peer w-5 h-5 text-sGradientColor cursor-pointer"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={1.5}
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
-            />
-          </motion.svg>
-          <p className="absolute right-8 top-[2px] text-xs gradientText invisible peer-hover:visible">
-            Contacts
-          </p>
-        </div>
+        </a>
       </motion.div>
     </motion.div>
   );
