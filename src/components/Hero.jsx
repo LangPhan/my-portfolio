@@ -14,7 +14,7 @@ function Hero() {
       ref={constraintsRef}
     >
       <ImageHero />
-      <div className="text-white text-xl md:text-2xl drop-shadow-text min-h-[24px] z-50">
+      <div className="text-white text-xl sm:text-2xl drop-shadow-text min-h-[24px] z-50">
         <Typewriter
           words={[
             "Hi, The Name's Dat",
@@ -32,7 +32,7 @@ function Hero() {
       </div>
       <motion.div
         className="absolute bg-sGradientColor rounded-full w-[150px] h-[150px] shadow-xl 
-      flex justify-center items-center text-lg text-white top-[10%] left-[10%] cursor-move z-10"
+      sm:flex hidden justify-center items-center text-lg text-white top-[10%] left-[10%] cursor-move z-10"
         drag
         dragConstraints={constraintsRef}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -44,7 +44,7 @@ function Hero() {
       </motion.div>
       <motion.div
         className="absolute bg-sGradientColor rounded-full w-[150px] h-[150px] shadow-xl 
-      flex justify-center items-center text-lg text-white top-[10%] right-[10%] cursor-move z-10"
+      sm:flex hidden justify-center items-center text-lg text-white top-[10%] right-[10%] cursor-move z-10"
         drag
         dragConstraints={constraintsRef}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -56,7 +56,7 @@ function Hero() {
       </motion.div>
       <motion.div
         className="absolute bg-sGradientColor rounded-full w-[150px] h-[150px] shadow-xl 
-      flex justify-center items-center text-lg text-white bottom-[15%] left-[10%] cursor-move z-10"
+      sm:flex hidden justify-center items-center text-lg text-white bottom-[15%] left-[10%] cursor-move z-10"
         drag
         dragConstraints={constraintsRef}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -68,7 +68,7 @@ function Hero() {
       </motion.div>
       <motion.div
         className="absolute bg-sGradientColor rounded-full w-[150px] h-[150px] shadow-xl 
-      flex justify-center items-center text-lg text-white bottom-[15%] right-[10%] cursor-move z-10"
+      sm:flex hidden justify-center items-center text-lg text-white bottom-[15%] right-[10%] cursor-move z-10"
         drag
         dragConstraints={constraintsRef}
         initial={{ opacity: 0, scale: 0.5 }}

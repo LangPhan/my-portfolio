@@ -8,7 +8,7 @@ import Skill from "./components/Skill";
 
 function App() {
   return (
-    <div className="font-inter bg-bgColor">
+    <div className="font-inter bg-bgColor max-w-full overflow-hidden">
       <Header />
       <NavIcon />
       {/* Hero */}
@@ -21,13 +21,13 @@ function App() {
       </section>
       {/* Skills */}
       <section className="section" id="skill">
-        <Skill/>
+        <Skill />
       </section>
       {/* Projects */}
-      <section className="section" id = "project">
-        <Project/>
+      <section className="section" id="project">
+        <Project />
       </section>
-      <Footer/>
+      <Footer />
       {/* Contact me */}
     </div>
   );

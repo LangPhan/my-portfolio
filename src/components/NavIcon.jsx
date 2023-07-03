@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-dom";
 
 function NavIcon() {
   const icon = {
@@ -13,7 +14,7 @@ function NavIcon() {
   };
   return (
     <motion.div
-      className="fixed bottom-8 right-8 w-10 h-10 rounded-full 
+      className="fixed bottom-8 right-4 sm:right-8 w-10 h-10 rounded-full 
     bg-white flex justify-center items-center shadow-2xl z-50"
       whileHover={{
         scale: 1.5,
@@ -40,7 +41,7 @@ function NavIcon() {
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
-        whileHover={{ rotate: 90 }} 
+        whileHover={{ rotate: 90 }}
         whileTap={{
           rotate: -90,
         }}
@@ -67,7 +68,7 @@ function NavIcon() {
         <a href="#hero" className="relative">
           <motion.svg
             whileHover={{ scale: 1.2 }}
-            whileTap={{rotate: 90}}
+            whileTap={{ rotate: 90 }}
             className="peer w-5 h-5 text-sGradientColor cursor-pointer"
             fill="none"
             stroke="currentColor"
@@ -81,18 +82,15 @@ function NavIcon() {
               strokeLinejoin="round"
               d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
             />
-            <a href="#hero"></a>
           </motion.svg>
-          <motion.p
-            className="absolute right-8 top-[2px] text-xs gradientText invisible peer-hover:visible"
-          >
+          <motion.p className="absolute right-8 top-[2px] text-xs gradientText invisible peer-hover:visible">
             Hero
           </motion.p>
         </a>
         <a href="#about" className="relative">
           <motion.svg
             whileHover={{ scale: 1.2 }}
-            whileTap={{rotate: 90}}
+            whileTap={{ rotate: 90 }}
             className="peer w-5 h-5 text-sGradientColor cursor-pointer"
             fill="none"
             stroke="currentColor"
@@ -114,7 +112,7 @@ function NavIcon() {
         <a href="#skill" className="relative">
           <motion.svg
             whileHover={{ scale: 1.2 }}
-            whileTap={{rotate: 90}}
+            whileTap={{ rotate: 90 }}
             className="peer w-5 h-5 text-sGradientColor cursor-pointer"
             fill="none"
             stroke="currentColor"
@@ -136,7 +134,7 @@ function NavIcon() {
         <a href="#project" className="relative">
           <motion.svg
             whileHover={{ scale: 1.2 }}
-            whileTap={{rotate: 90}}
+            whileTap={{ rotate: 90 }}
             className="peer w-5 h-5 text-sGradientColor cursor-pointer"
             fill="none"
             stroke="currentColor"
@@ -152,7 +150,7 @@ function NavIcon() {
             />
           </motion.svg>
           <p className="absolute right-8 top-[2px] text-xs gradientText invisible peer-hover:visible">
-           Projects
+            Projects
           </p>
         </a>
       </motion.div>

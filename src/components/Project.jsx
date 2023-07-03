@@ -47,7 +47,7 @@ function Project() {
         Use arrow keys to move between projects
       </h2>
       <div
-        className=" mt-[14%] w-full flex space-x-5
+        className="mt-[30%] sm:mt-[14%] w-full flex space-x-5
       overflow-x-scroll p-10 snap-x snap-mandatory scroll"
       >
         <ProjectCard

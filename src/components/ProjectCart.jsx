@@ -19,10 +19,11 @@ function ProjectCard(props) {
         <h4 className="uppercase text-2xl text-yellow-400">{props.name}</h4>
         <p className="">Technologies used: </p>
         <div className="flex space-x-2 my-2">
-          {props.techs.map((image) => {
+          {props.techs.map((image, index) => {
             return (
               <motion.img
-              whileHover={{scale: 1.2}}
+                whileHover={{ scale: 1.2 }}
+                key={index}
                 src={image}
                 alt="image"
                 className="h-10 w-10 rounded-full"
@@ -32,8 +33,8 @@ function ProjectCard(props) {
         </div>
         <p className="uppercase italic text-lg ">My role:</p>
         <ul className="list-disc space-y-4 ml-5 text-lg ">
-          {props.roles.map((role) => {
-            return <li>{role}</li>;
+          {props.roles.map((role, index) => {
+            return <li key={index}>{role}</li>;
           })}
         </ul>
       </div>
