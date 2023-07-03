@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function About() {
   return (
     <motion.div
-      className="flex flex-col h-screen md:flex-row justify-center items-center mx-0 md:mx-24 2xl:mx-36"
+      className="flex flex-col h-screen lg:flex-row justify-center items-center mx-0 lg:mx-24 2xl:mx-36"
       initial={{
         opacity: 0,
         y: -50,
@@ -34,11 +34,11 @@ function About() {
           opacity: 1,
           x: 0,
         }}
-        whileHover={{ scale: 1.5, transition: {duration: 0.8} }}
+        whileHover={{ scale: 1.5, transition: { duration: 0.8 } }}
         src={img}
         alt="Main Image"
-        className="object-cover w-24 h-24 rounded-full mb-10 md:mb-0 md:w-[200px] md:h-[280px] 
-        md:rounded-lg lg:w-[300px] lg:h-[380px] shadow-2xl"
+        className="object-cover w-24 h-24 rounded-full mb-10 md:w-[250px] md:h-[250px]
+        lg:rounded-lg lg:w-[300px] lg:h-[380px] shadow-2xl"
       />
       <motion.div
         className="space-y-10 md:px-10 text-center md:text-left"
@@ -55,7 +55,7 @@ function About() {
           x: 0,
         }}
       >
-        <h4 className="uppercase text-lg md:text-xl text-white">
+        <h4 className="uppercase text-lg md:text-xl md:text-center lg:text-left text-white">
           Here is little background
         </h4>
         <p className="text-xs md:text-lg gradientText">
